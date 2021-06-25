@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="576581.svg"
+   id="svg8"
+   preserveAspectRatio="xMidYMid meet"
+   viewBox="0 0 1169.000000 1280.000000"
+   height="1280.000000pt"
+   width="1169.000000pt"
+   version="1.0">
+  <defs
+     id="defs12">
+    <linearGradient
+       id="linearGradient2987"
+       inkscape:collect="always">
+      <stop
+         id="stop2983"
+         offset="0"
+         style="stop-color:#000080;stop-opacity:1;" />
+      <stop
+         id="stop2985"
+         offset="1"
+         style="stop-color:#000080;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="rotate(0.39942449,5221.1735,4239.2846)"
+       gradientUnits="userSpaceOnUse"
+       y2="3469.6921"
+       x2="19702.83"
+       y1="4462.2783"
+       x1="3300.3481"
+       id="linearGradient2989"
+       xlink:href="#linearGradient2987"
+       inkscape:collect="always" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:current-layer="g6"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="1273.8917"
+     inkscape:cx="1195.4694"
+     inkscape:zoom="0.30224084"
+     showgrid="false"
+     id="namedview10"
+     inkscape:window-height="705"
+     inkscape:window-width="1366"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <metadata
+     id="metadata2">
+Created by potrace 1.15, written by Peter Selinger 2001-2017
+<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     id="g6"
+     stroke="none"
+     fill="#000000"
+     transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+    <path
+       style="fill:url(#linearGradient2989);fill-opacity:1;stroke-width:0.74765"
+       id="path4"
+       d="m 3806.7456,8463.4403 c -40.5864,-43.9551 -135.817,-143.2333 -211.5673,-221.8277 -252.6812,-262.153 -439.9133,-462.7899 -475.1171,-509.8679 l -34.6596,-45.5242 43.8617,-950.1184 c 24.2051,-522.4874 71.139,-1523.4047 104.4744,-2225.2399 57.5669,-1216.0303 86.2038,-1869.6539 91.9618,-2091.4928 12.4944,-474.7768 44.8613,-1142.4032 91.0689,-1866.03771 16.4367,-255.03489 18.5338,-273.69816 40.0044,-304.84742 12.348,-17.13342 23.0633,-38.92739 24.1152,-47.22247 1.0419,-11.40474 4.2641,-15.55886 15.0461,-16.62169 11.3229,-0.5459 36.5734,-30.14952 115.5236,-130.370433 225.0303,-287.158567 351.2893,-433.103617 524.9135,-607.151407 138.1429,-139.75458 228.957,-240.00441 270.8297,-299.19068 28.9835,-42.56977 102.4412,-173.87419 131.8992,-236.65819 l 21.9582,-47.2171 405.8313,-74.0672 c 223.1288,-39.9333 409.08,-69.9287 413.4075,-65.7929 4.3274,4.1357 12.4648,19.146 18.9792,32.6055 13.0423,31.0651 17.8941,30.535 8.6282,-0.021 l -7.6196,-21.7494 16.7488,9.8067 c 39.4414,23.2265 204.2787,135.2919 316.6988,213.7967 362.6713,255.66567 608.1774,466.52636 700.2855,601.05519 16.7988,25.35487 49.9156,94.20567 73.2923,152.71458 54.3663,136.69396 217.2622,483.54593 350.2201,743.91776 68.9181,134.06708 154.7018,314.22017 191.1008,397.57488 37.4875,86.46175 48.4961,155.88479 70.3956,425.85629 5.0683,66.8462 12.9146,159.0812 16.8411,206.2352 26.3402,309.3504 37.0544,454.9615 33.3213,467.9276 -2.6714,7.7808 6.7467,253.4237 20.088,545.1839 50.4,1083.6052 81.9755,2014.8813 87.5149,2563.7286 1.6619,181.3947 9.195,679.4455 17.0393,1106.4908 19.8072,1128.7703 20.6213,1214.2849 12.4962,1370.8259 -4.0675,76.7154 -43.0832,353.5731 -83.8285,595.7109 -23.2842,137.919 -24.3495,142.0683 -55.5069,179.4609 -17.1898,20.7728 -67.7273,68.5784 -111.8272,106.0016 -74.215,63.4118 -380.8094,308.7883 -497.0039,398.2162 -27.9719,21.836 -280.7562,230.801 -562.0402,465.2325 -280.7429,234.9472 -524.3814,437.153 -540.5194,449.6312 l -30.1255,22.878 -129.6634,-74.3164 C 5066.197,9550.3175 4840.842,9401.083 4713.2423,9297.7375 4524.5474,9145.3046 3944.1954,8611.3335 3806.7456,8463.4403 Z M 5857.8751,334.88557 c -0.01,-2.07311 -3.2923,-17.61357 -7.1189,-33.67099 l -6.5677,-30.04435 1.1685,27.9844 c 0.5875,15.02875 3.8732,30.56919 7.1186,33.67098 3.2457,3.10178 5.406,4.13307 5.3995,2.05996 z" />
+  </g>
+</svg>

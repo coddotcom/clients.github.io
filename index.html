@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SHISHI FOOD RESTAURANT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/section6.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=3d">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong&effect=fire">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="https://kit.fontawesome.com/1ba2f6e73d.js" crossorigin="anonymous"></script> 
+</head>
+ <style>
+  body{padding:0;
+background-color: #DFDBE5;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+  }
+
+#map {
+  height: 300px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+.nav-link{color:#000 !important;}
+.nav-linkdark{color:#fff !important;}
+
+.btn-default{color:#ffffff;font-size:18px;text-transform: uppercase;}
+
+  .navbar{background-color:#ffffff;
+    font-family: "Audiowide", sans-serif;
+  -webkit-transition: background 1s; /* For Safari 3.1 to 6.0 */
+  transition: background 1s;
+   box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.57);
+-webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.57);
+  }
+
+.navbardark{background-color:rgb(6,15,13,1);
+  
+}
+
+ .img-container{height:500px;}
+
+.menu,.order{background:rgb(3, 78, 252,0.9); font-size:14px; color:#FFF; padding:13px 32px; display:inline-block;font-family: "Audiowide", sans-serif; }
+.book:hover{background:#2e9ca6; text-decoration:none;  }
+
+  .customers{height:400px;}
+  
+  .centered{padding-left:50px;}
+
+.centered h4{
+	text-transform: uppercase;
+    color:#000;
+	font-size:40px;
+	font-weight:bolder;	
+}
+
+.centered P{
+	text-transform: uppercase;
+    color:#000;
+	font-size:20px;
+	font-weight:bolder;	
+}
+
+ a{text-transform: uppercase;}
+ 
+ .nav-link{font-weight:bold;}
+ 
+ .toggler{
+     border:none !important;
+     height:50px;
+	 width:60px;
+    padding: 10px 8px 0px 10px;
+    font-family: Arial, Verdana;   
+    background: #f0f0f0 url(img/menu.svg);
+    background-position:50% bottom;
+    background-repeat: no-repeat;
+}​
+
+
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+    
+
+
+	
+	
+}
+
+@media (max-width: 767px) {
+  body{padding:0;}
+  
+  .centered h4{
+	font-size:20px;	
+}
+
+.centered P{
+	font-size:14px;	
+}
+
+.img-container{height:250px;}
+
+ .customers{height:300px;}
+ 
+ .menu,.order{font-size:10px; color:#FFF; padding:10px 20px; display:inline-block;font-family: "Audiowide", sans-serif; }
+ 
+ .logo{ height:60px;width:70px;}
+ 
+  .centered{padding-left:2px;}
+
+}
+
+@media (max-width: 480px) {
+
+
+
+
+
+
+}
+
+@media (max-width: 320px) {
+
+}
+
+
+
+
+
+
+
+
+   
+  
+
+
+
+
+
+ </style>
+<body>
+  
+
+	
+	
+	<nav  class="navbar navbar-expand-md  navbar-light sticky-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><img height="50px" width="100px" src="img/chef.svg" alt=""> </a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button style="background-color:#fff" class="toggler navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul  class="navbar-nav ml-auto">
+      <li style="border:3px solid #000;" class="nav-item">
+        <a class="nav-link" href="#">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ABOUT US</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">MENU</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#">SERVICES</a>
+      </li>
+	    <li class="nav-item">
+        <a class="nav-link" href="#">PRODUCTS</a>
+      </li>
+	     <li class="nav-item">
+        <a class="nav-link" href="#">BLOG</a>
+      </li>
+	    <li class="nav-item">
+        <a class="nav-link" href="#">CONTACT US</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid">
+<div class="row">
+ <div style="height:550px;background-color:lightgray;" class="d-flex align-items-center justify-content-start col-12 image">
+   
+          <div style="" class="centered">
+		  <div style="margin-bottom:20px;">
+         <h4 class="font-effect-3d" style='font-family: "Sofia", sans-serif;'>SHISHI FOOD RESTAURANT</h4>
+		 </div>
+		 <div>
+       <p class="font-effect-fire" style='font-family: "Trirong", serif;'>Where tasty food is served</p>
+	   </div>
+	   <a href="" class="menu">Our menu</a>
+	   <a href="" class="order">Order now</a>
+           </div>
+		  
+           </div>
+          
+</div>
+
+
+
+
+
+
+      <div style="display:none;" class="row">
+	    <div style="padding:0;" class="col-12">
+			     <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="mask flex-center">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-12 order-md-1 order-2 ">
+               <h4>Super breakfast</h4>
+              <a href="#nursery">Order now</a>
+			  </div>
+            <div  class="img-container col-md-6 col-12 order-md-2 order-1"><img src="img/2.jpg" class="mx-auto lozad" alt="slide" style='height: 100%; width: 100%; object-fit: cover; max-width: 100%; max-height: 100%;'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="mask flex-center">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-12 order-md-1 order-2">
+              <h4>Yummy lunch</h4>
+              <a href="#girls">Order now</a> </div>
+            <div  class="img-container col-md-6 col-12 order-md-2 order-1"><img src="img/1.jpg" class="mx-auto lozad" alt="slide" style='height: 100%; width: 100%; object-fit: cover; max-width: 100%; max-height: 100%;'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="mask flex-center">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-12 order-md-1 order-2">
+              <h4>Delightful dinner</h4>
+              <a href="#boys">Order now</a> </div>
+            <div  class="img-container col-md-6 col-12 order-md-2 order-1 "><img src="img/3.jpg" class="mx-auto lozad" alt="slide" style='height: 100%; width: 100%; object-fit: cover; max-width: 100%; max-height: 100%;'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+<!--slide end--> 
+</div>
+</div>
+ 
+  
+
+
+<div class="row">
+  <div  class="col-md-6 customers">
+  </div>
+  <div style="color:white;" class="message col-md-6 d-flex align-items-center p-2">
+  <div style="background-color:rgb(0,0,0,0.7);padding:50px 5px;font-size:20px;">
+  <p>Shishi food restaurant where tasty food is served. The tasty of our foods bring a smile to everyone who eats it.</p>
+  <p>Be the next to smile by placing an order today</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div style="background-color:#0099ff; color:#ffffff;font-size:18px;" class="footer row">
+   <div class="col-md-6 ">
+		                		
+		                    	<div class="section-6-form">
+		                    		<form role="form" action="contact.php" method="post">
+				                    	<div class="form-group">
+				                    		<label class="sr-only" for="contact-email">
+									
+											</label>
+				                        	<input type="email" name="email" placeholder="Email"  class="form-control">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="contact-subject">
+											</label>
+				                        	<input type="text" name="subject" placeholder="Subject" class="form-control">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="contact-message">
+											</label>
+				                        	<textarea name="message" placeholder="Message" class="form-control"></textarea>
+				                        </div>
+				                        <button type="submit" name="send" class="btn btn-primary btn-customized"><i class="fas fa-paper-plane"></i> Send</button>
+				                    </form>
+		                    	</div>
+		                    </div>
+		                    <div class="col-md-5 offset-md-1 ">
+							  <div style="margin:0;"class="row">
+							   <div class="col-12">
+		                    	
+		                    	<div class="section-6-social">
+			                    	<a href="#"><i class="fab fa-facebook-f"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									
+		                    	</div>
+		                    	</div>
+								
+								<div class="col-12">
+								    <ul class="">
+                                       <li>0716101721</li>
+                                       <li>shishifood@gmail.com</li>
+                                       <li><img style="width:30px;height:30px;" src="img/map-marker.svg">ADA ESTATES, Near THT</li>
+     
+      </ul>
+								</div>
+		                    	</div>
+		                    </div>
+		
+</div>
+
+<div class="row">
+   <div style="background-color:#0099ff; color:#ffffff;text-align:center;" class="col-12">
+      <p>Copyright &#169; shishifood 2020</p>
+   </div>
+</div>
+
+</div>
+
+
+<script src="js/jquery.js"></script>
+    <script src="js/jquery.backstretch.js"></script>
+
+ <script src="js/jquery.backstretch.min.js"></script>
+ 
+ <script>
+  $(".image").backstretch(["img/shishicopy.png"]);
+ </script>
+ 
+  <script>
+   $(".customers").backstretch(["img/4.jpg","img/10.jpg","img/11.jpg"]);
+ </script>
+ 
+  <script>
+   $(".message").backstretch(["img/12.jpg"]);
+ </script>
+ 
+ <script>
+   $(".breakfast").backstretch(["img/2.jpg"]);
+ </script>
+ 
+ <script>
+   $(".lunch").backstretch(["img/2.jpg"]);
+ </script>
+ 
+  <script>
+   $(".dinner").backstretch(["img/2.jpg"]);
+ </script>
+ 
+ 
+
+
+<script>
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll > 10) {
+        //clearHeader, not clearheader - caps H
+        $(".navbar").addClass("navbardark");
+        $(".nav-link").addClass("nav-linkdark");
+	  $('.navbar-brand img').attr('src','img/logodark.png');
+    }
+	
+	 else if(scroll <= 10) {
+        //clearHeader, not clearheader - caps H
+        $(".navbar").removeClass("navbardark");
+        $(".nav-link").removeClass("nav-linkdark");
+		 $('.navbar-brand img').attr('src','img/logo.png');
+    }
+});
+</script>
+
+
+ <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ3ZyqugBi5XcxlhK4UKrM7VtRv6lTbS8&callback=initMap&libraries=&v=weekly" defer></script>
+  
+  
+<script>
+    // Initialize and add the map, 
+function initMap() {
+  // The location of Uluru 
+  const uluru = { lat: -6.785733716508637, lng: 39.27314716839977 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+  </script>
+
+</body>
+</html>

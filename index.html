@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/section6.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=3d">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong&effect=fire">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
@@ -82,9 +83,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     background: #f0f0f0 url(img/menu.svg);
     background-position:50% bottom;
     background-repeat: no-repeat;
-}​
+}
+	 
+.slick-prev, .slick-next{display:none !important;}
+.slick-dots{display:none !important;}	 
+	 
 
-
+.volunteer{height:350px;}
 
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -212,51 +217,39 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 
-      <div style="display:none;" class="row">
-	    <div style="padding:0;" class="col-12">
-			     <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="mask flex-center">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 col-12 order-md-1 order-2 ">
-               <h4>Super breakfast</h4>
-              <a href="#nursery">Order now</a>
-			  </div>
-            <div  class="img-container col-md-6 col-12 order-md-2 order-1"><img src="img/2.jpg" class="mx-auto lozad" alt="slide" style='height: 100%; width: 100%; object-fit: cover; max-width: 100%; max-height: 100%;'></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="mask flex-center">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 col-12 order-md-1 order-2">
-              <h4>Yummy lunch</h4>
-              <a href="#girls">Order now</a> </div>
-            <div  class="img-container col-md-6 col-12 order-md-2 order-1"><img src="img/1.jpg" class="mx-auto lozad" alt="slide" style='height: 100%; width: 100%; object-fit: cover; max-width: 100%; max-height: 100%;'></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="mask flex-center">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 col-12 order-md-1 order-2">
-              <h4>Delightful dinner</h4>
-              <a href="#boys">Order now</a> </div>
-            <div  class="img-container col-md-6 col-12 order-md-2 order-1 "><img src="img/3.jpg" class="mx-auto lozad" alt="slide" style='height: 100%; width: 100%; object-fit: cover; max-width: 100%; max-height: 100%;'></div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <div  class="row">
+	<div  class="col-12 slick-slider">
+  <div style="padding:20px;">
+   <div class="volunteer" style="border-radius:50% 50% 50% 50% / 0% 100% 0% 100% ;background-image:url('img/1.jpg');background-repeat:none;background-size:cover;">
+  
+    </div>  
+ </div>
+  <div style="padding:20px;">
+    <div class="volunteer"  style="border-radius:50%;background-image:url('img/2.jpg');background-repeat:none;background-size:cover;">
+  
+    </div>  
   </div>
-  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
-<!--slide end--> 
-</div>
+  <div style="padding:20px;">
+  <div class="volunteer" style="border-radius:50% ;background-image:url('img/3.jpg');background-repeat:none;background-size:cover;">
+  
+    </div>  
+  </div>
+  
+   <div style="padding:20px;">
+   <div class="volunteer" style="border-radius:50% 50% 50% 50% / 100% 100% 0% 0% ;background-image:url('img/1.jpg');background-repeat:none;background-size:cover;">
+  
+    </div>  
+  </div>
+  
+   <div style="padding:20px;">
+   <div class="volunteer" style="border-radius:50% 50% 50% 50% / 0% 100% 0% 100%  ;background-image:url('img/2.jpg');background-repeat:none;background-size:cover;">
+  
+    </div>  
+  </div>
+  
+ 
+ 
+</div>   
 </div>
  
   
@@ -334,6 +327,49 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 </div>
 
 </div>
+	
+	
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slick-slider').slick({
+       infinite: true,
+	     slidesToShow: 3,
+  slidesToScroll: 1,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+      });
+    });
+  </script>
 
 
 <script src="js/jquery.js"></script>

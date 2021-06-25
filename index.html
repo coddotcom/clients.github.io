@@ -11,10 +11,16 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong&effect=fire">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   <script src="https://kit.fontawesome.com/1ba2f6e73d.js" crossorigin="anonymous"></script> 
+   <script src="https://kit.fontawesome.com/1ba2f6e73d.js" crossorigin="anonymous"></script>   
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>   
+      <script src="js/jquery.backstretch.js"></script>
+   <script src="js/jquery.backstretch.min.js"></script>
 </head>
  <style>
   body{padding:0;
@@ -218,9 +224,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
       <div  class="row">
-	<div  class="col-12 slick-slider">
+	<div  style="background:rgb(18, 63, 227)" class="col-12 slick-slider">
   <div style="padding:20px;">
-   <div class="volunteer" style="border-radius:50% 50% 50% 50% / 0% 100% 0% 100% ;background-image:url('img/1.jpg');background-repeat:none;background-size:cover;">
+   <div class="volunteer" style="border-radius:50% ;background-image:url('img/1.jpg');background-repeat:none;background-size:cover;">
   
     </div>  
  </div>
@@ -236,13 +242,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   </div>
   
    <div style="padding:20px;">
-   <div class="volunteer" style="border-radius:50% 50% 50% 50% / 100% 100% 0% 0% ;background-image:url('img/1.jpg');background-repeat:none;background-size:cover;">
+   <div class="volunteer" style="border-radius:50%;background-image:url('img/1.jpg');background-repeat:none;background-size:cover;">
   
     </div>  
   </div>
   
    <div style="padding:20px;">
-   <div class="volunteer" style="border-radius:50% 50% 50% 50% / 0% 100% 0% 100%  ;background-image:url('img/2.jpg');background-repeat:none;background-size:cover;">
+   <div class="volunteer" style="border-radius:50% ;background-image:url('img/2.jpg');background-repeat:none;background-size:cover;">
   
     </div>  
   </div>
@@ -329,9 +335,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 </div>
 	
 	
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
+
   
     <script type="text/javascript">
     $(document).ready(function(){
@@ -372,10 +376,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   </script>
 
 
-<script src="js/jquery.js"></script>
-    <script src="js/jquery.backstretch.js"></script>
 
- <script src="js/jquery.backstretch.min.js"></script>
  
  <script>
   $(".image").backstretch(["img/shishicopy.png"]);
@@ -425,28 +426,8 @@ $(window).scroll(function() {
 });
 </script>
 
-
- <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ3ZyqugBi5XcxlhK4UKrM7VtRv6lTbS8&callback=initMap&libraries=&v=weekly" defer></script>
   
   
-<script>
-    // Initialize and add the map, 
-function initMap() {
-  // The location of Uluru 
-  const uluru = { lat: -6.785733716508637, lng: 39.27314716839977 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 15,
-    center: uluru,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
-}
-  </script>
 
 </body>
 </html>

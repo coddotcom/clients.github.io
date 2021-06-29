@@ -19,7 +19,7 @@
    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>   
-	<script src="js/jquery.backstretch.js"></script>
+      <script src="js/jquery.backstretch.js"></script>
    <script src="js/jquery.backstretch.min.js"></script>
 </head>
  <style>
@@ -27,6 +27,8 @@
 background-color: #DFDBE5;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
   }
+  
+  .home{height:550px;}
 
 .astrodivider {
   margin-bottom:-5px; 
@@ -62,6 +64,8 @@ background:rgb(18, 63, 227);
 .nav-link{color:#000 !important;}
 .nav-linkdark{color:#fff !important;}
 
+.nav-item-active{border:3px solid #000;}
+
 .btn-default{color:#ffffff;font-size:18px;text-transform: uppercase;}
 
   .navbar{background-color:#ffffff;
@@ -80,6 +84,7 @@ background:rgb(18, 63, 227);
  .img-container{height:500px;}
 
 .menu,.order{background:rgb(3, 78, 252,0.9); font-size:14px; color:#FFF; padding:13px 32px; display:inline-block;font-family: "Audiowide", sans-serif; }
+.order-now{background:#ffffff; font-size:14px; color:#000000; padding:13px 32px; display:inline-block;font-family: "Audiowide", sans-serif; }
 .book:hover{background:#2e9ca6; text-decoration:none;  }
 
   .customers{height:400px;}
@@ -104,16 +109,7 @@ background:rgb(18, 63, 227);
  
  .nav-link{font-weight:bold;}
  
- .toggler{
-     border:none !important;
-     height:50px;
-	 width:60px;
-    padding: 10px 8px 0px 10px;
-    font-family: Arial, Verdana;   
-    background: #f0f0f0 url(img/menu.svg);
-    background-position:50% bottom;
-    background-repeat: no-repeat;
-}
+
 	 
 .slick-prev, .slick-next{display:none !important;}
 .slick-dots{display:none !important;}	 
@@ -121,20 +117,15 @@ background:rgb(18, 63, 227);
 
 .volunteer{height:350px;}
 
-.next,.back {
-  background-color: #04AA6D;
-  border: none;
-  color: white;
-  height:80px;
-  width:80px;
-  border-radius:50%;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
+ .back{margin-top:150px;left:15px;position:absolute;color:#000000;font-size:25px;text-align:center;line-height:60px;height:60px;width:60px;border-radius:50%;background-color:rgb(255,255,255);z-index:1000;}
+  
+  .next{margin-top:150px;right:15px;position:absolute;color:#00000;font-size:25px;text-align:center;line-height:60px;height:60px;width:60px;border-radius:50%;background-color:rgb(255,255,255);z-index:1000;}   
 
 .next:focus,.back:focus{outline:none;}
+
+.toggler{visibility:hidden;}
+
+.message{font-size:20px;font-family: "Audiowide", sans-serif; }
 
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -146,8 +137,55 @@ background:rgb(18, 63, 227);
 }
 
 @media (max-width: 767px) {
-.volunteer{height:250px;}
+ .toggler{
+  visibility:visible;
+     border:none !important;
+    }
+	.toggler:focus{outline:none;}
+	
   body{padding:0;}
+  
+  .nav-item,.nav-item-active{padding-left:5px;}
+  
+  .astrodivider {
+  margin-bottom:-5px; 
+  max-width:100%;
+  position:relative;
+background:rgb(18, 63, 227);
+  width:100%;
+}
+
+.astrodividermask { 
+    overflow:hidden; height:35px; 
+}
+
+.astrodividermask:after { 
+      content:''; 
+      display:block; margin:-25px auto 0;
+      width:100%; height:25px;  
+        border-radius:125px / 12px;
+}
+.astrodivider span {
+    width:50px; height:50px; 
+    position:absolute; 
+    bottom:100%; margin-bottom:-25px;
+    left:50%; margin-left:-25px;
+    border-radius:100%;
+    background:#fff;
+	box-shadow:0 -2px 4px #000;
+  text-align:center;
+   line-height:50px;
+}
+  
+   .home{height:300px;}
+
+  
+  .volunteer{height:230px;}
+  
+  .back{margin-top:100px;left:15px;font-size:15px;line-height:40px;height:40px;width:40px;border-radius:50%;}
+  
+  .next{margin-top:100px;right:15px;font-size:15px;line-height:40px;height:40px;width:40px;border-radius:50%;}   
+
   
   .centered h4{
 	font-size:20px;	
@@ -162,10 +200,13 @@ background:rgb(18, 63, 227);
  .customers{height:300px;}
  
  .menu,.order{font-size:10px; color:#FFF; padding:10px 20px; display:inline-block;font-family: "Audiowide", sans-serif; }
+ .order-now{font-size:10px; padding:10px 20px; display:inline-block;font-family: "Audiowide", sans-serif; }
  
  .logo{ height:60px;width:70px;}
  
   .centered{padding-left:2px;}
+  
+  .message{font-size:15px;}
 
 }
 
@@ -207,14 +248,15 @@ background:rgb(18, 63, 227);
   <a class="navbar-brand" href="#"><img height="50px" width="100px" src="img/chef.svg" alt=""> </a>
 
   <!-- Toggler/collapsibe Button -->
-  <button style="background-color:#fff" class="toggler navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    
-  </button>
+  <div style="background-color:#ffffff;height:45px;width:60px;" class="d-flex justify-content-center toggler navbar-toggler ml-auto" type="div" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <img src="img/menu.svg" width="50px" height="50px"/>
+      <img  src="img/x.svg" width="40px" height="40px" style="display:none"/> 
+  </div>
 
   <!-- Navbar links -->
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul  class="navbar-nav ml-auto">
-      <li style="border:3px solid #000;" class="nav-item">
+      <li  class="nav-item-active">
         <a class="nav-link" href="#">HOME</a>
       </li>
       <li class="nav-item">
@@ -241,7 +283,7 @@ background:rgb(18, 63, 227);
 <section>
 <div class="container-fluid">
 <div class="row">
- <div style="height:550px;background-color:lightgray;" class="d-flex align-items-center justify-content-start col-12 image">
+ <div style="background-color:lightgray;" class="d-flex align-items-center justify-content-start col-12 home">
    
           <div style="" class="centered">
 		  <div style="margin-bottom:20px;">
@@ -266,35 +308,72 @@ background:rgb(18, 63, 227);
 
 
 <section>
+   <div class="back"  id="prev">
+    <i class="fa fa-chevron-left"></i>
+	 </div>
+	  <div class="next" id="next">
+	   <i class="fa fa-chevron-right"></i>
+	 </div>
+
 <div class="container-fluid">
       <div  class="row">
-	<div  style="background:rgb(18, 63, 227)" class="col-12 slick-slider">
+	<div  style="background:rgb(18, 63, 227);" class="col-12 slick-slider">
   <div style="padding:20px;">
    <div class="volunteer" style="border-radius:50% ;background-image:url('img/1.jpg');background-repeat:none;background-size:cover;">
   
-    </div>  
+    </div> 
+	  <div class="d-flex justify-content-center text-white col-12">
+    <p>Food caption @ Price</p>
+   </div> 	
+   <div class="d-flex justify-content-center col-12">
+      <a href="" class="order-now">Order now</a>
+   </div>   
  </div>
   <div style="padding:20px;">
     <div class="volunteer"  style="border-radius:50%;background-image:url('img/2.jpg');background-repeat:none;background-size:cover;">
   
-    </div>  
+    </div> 
+    <div class="d-flex justify-content-center text-white col-12">
+    <p>Food caption @ Price</p>
+   </div> 			
+	 <div class="d-flex justify-content-center col-12">
+      <a href="" class="order-now">Order now</a>
+   </div> 
   </div>
   <div style="padding:20px;">
   <div class="volunteer" style="border-radius:50% ;background-image:url('img/3.jpg');background-repeat:none;background-size:cover;">
   
-    </div>  
+    </div> 
+    <div class="d-flex justify-content-center text-white col-12">
+    <p>Food caption @Price</p>
+   </div> 	
+	 <div class="d-flex justify-content-center col-12">
+      <a href="" class="order-now">Order now</a>
+   </div> 
   </div>
   
    <div style="padding:20px;">
    <div class="volunteer" style="border-radius:50%;background-image:url('img/1.jpg');background-repeat:none;background-size:cover;">
   
-    </div>  
+    </div> 
+	  <div class="d-flex justify-content-center text-white col-12">
+    <p>Food caption @Price</p>
+   </div> 	
+ <div class="d-flex justify-content-center col-12">
+      <a href="" class="order-now">Order now</a>
+   </div> 	
   </div>
   
    <div style="padding:20px;">
    <div class="volunteer" style="border-radius:50% ;background-image:url('img/2.jpg');background-repeat:none;background-size:cover;">
   
-    </div>  
+    </div> 
+	  <div class="d-flex justify-content-center text-white col-12">
+    <p>Food caption @Price</p>
+   </div> 	
+   <div class="d-flex justify-content-center col-12">
+      <a href="" class="order-now">Order now</a>
+   </div> 	
   </div>
   
  
@@ -312,9 +391,9 @@ background:rgb(18, 63, 227);
   <div  class="col-md-6 customers">
   </div>
   <div style="color:white;" class="message col-md-6 d-flex align-items-center p-2">
-  <div style="background-color:rgb(0,0,0,0.7);padding:50px 5px;font-size:20px;">
+  <div style="background-color:rgb(0,0,0,0.7);padding:50px 5px;">
   <p>Shishi food restaurant where tasty food is served. The tasty of our foods bring a smile to everyone who eats it.</p>
-  <p>Be the next to smile by placing an order today</p>
+  <p>Be the next to smile by placing an order today </br><span> <a href="" class="order">Order now</a></span></p>
     </div>
   </div>
 </div>
@@ -325,7 +404,7 @@ background:rgb(18, 63, 227);
 
 <section>
 <div class="container-fluid">
-<div style="background-color:#0099ff; color:#ffffff;font-size:18px;" class="footer row">
+<div style="background:rgb(18, 63, 227);; color:#ffffff;font-size:18px;" class="footer row">
    <div class="col-md-6 ">
 		                		
 		                    	<div class="section-6-form">
@@ -363,12 +442,11 @@ background:rgb(18, 63, 227);
 		                    	</div>
 								
 								<div class="col-12">
-								    <ul class="">
-                                       <li>0716101721</li>
-                                       <li>shishifood@gmail.com</li>
-                                       <li><img style="width:30px;height:30px;" src="img/map-marker.svg">ADA ESTATES, Near THT</li>
+								    <ul style="list-style-type:none;" class="">
+                                       <li><img style="width:30px;height:30px;" src="img/phone.svg"> 0716101721</li>
+                                       <li><img style="width:30px;height:30px;" src="img/map-marker.svg"> ADA ESTATES, Near THT</li>
      
-      </ul>
+                            </ul>
 								</div>
 		                    	</div>
 		                    </div>
@@ -380,8 +458,8 @@ background:rgb(18, 63, 227);
 <section>
 <div class="container-fluid">
 <div class="row">
-   <div style="background-color:#0099ff; color:#ffffff;text-align:center;" class="col-12">
-      <p>Copyright &#169; shishifood 2020</p>
+   <div style="background:rgb(18, 63, 227); color:#ffffff;text-align:center;" class="col-12">
+      <p>Copyright &#169; shishifood 2021</p>
    </div>
 </div>
 </div>
@@ -396,8 +474,9 @@ background:rgb(18, 63, 227);
        infinite: true,
 	     slidesToShow: 3,
   slidesToScroll: 1,
-    nextArrow: '<button style="right:10%;top:50%;position:absolute;z-index:99" class="next"><i style="font-size:22px;" class="fa fa-chevron-right" aria-hidden="true"></i></button>',
-        prevArrow: '<button style="left:10%;top:50%;position:absolute;z-index:99" class="back"><i style="font-size:22px;" class="fa fa-chevron-left" aria-hidden="true"></i></button>',
+   autoplay: true,
+		 nextArrow: '.next',
+        prevArrow: '.back',
     responsive: [
     {
       breakpoint: 1024,
@@ -434,7 +513,7 @@ background:rgb(18, 63, 227);
 
  
  <script>
-  $(".image").backstretch(["img/shishicopy.png"]);
+  $(".home").backstretch(["img/shishicopy.png"]);
  </script>
  
   <script>
@@ -469,16 +548,26 @@ $(window).scroll(function() {
         //clearHeader, not clearheader - caps H
         $(".navbar").addClass("navbardark");
         $(".nav-link").addClass("nav-linkdark");
-	  $('.navbar-brand img').attr('src','img/logodark.png');
+	  $('.navbar-brand img').attr('src','img/chef2.svg');
+	   $('.nav-item-active').css('border','3px solid #ffffff');
     }
 	
 	 else if(scroll <= 10) {
         //clearHeader, not clearheader - caps H
         $(".navbar").removeClass("navbardark");
         $(".nav-link").removeClass("nav-linkdark");
-		 $('.navbar-brand img').attr('src','img/logo.png');
+		 $('.navbar-brand img').attr('src','img/chef.svg');
+		 $('.nav-item-active').css('border','3px solid #000000');
     }
 });
+</script>
+
+
+<script>   
+$(".toggler").click(function(){
+  $('img',this).toggle();
+});
+
 </script>
 
   
